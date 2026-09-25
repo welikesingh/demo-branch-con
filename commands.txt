@@ -1,0 +1,72 @@
+feature-login 
+feature-profile
+feature-dashboard
+
+git switch main
+git merge feature-login
+git log --oneline
+
+git switch -c feature-profile
+
+
+create remote repo
+     ↓
+initialize local report (git init) 
+     ↓
+create some files 
+     ↓
+rename master branch as main: git branch -M main
+     ↓
+git remote add origin <github-repository-url> 
+
+
+
+
+Create branch
+     ↓
+Make changes
+     ↓
+git add
+     ↓
+git commit
+     ↓
+switch to main
+     ↓
+git merge feature-branch
+     ↓
+repeat for next feature
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+git init
+git add .
+git commit -m "first commit"  
+git branch -M main
+      -M → rename the current branch, forcing the rename if there is already a branch named main
+
+
+git remote add origin https://github.com/welikesingh/git-stash-test.git
+
+     git remote add origin <github-repository-url> 
+		connects your local Git repository to a remote repository on GitHub
+		origin → the name/alias you give to the remote repository. origin is the conventional name.
+		Local Repository
+			   |
+			   | origin
+			   ↓
+		GitHub Repository
+
+
+git push -u origin main
+
+		Here: 
+		origin → GitHub repository
+		main   → branch you want to push
+
+        The -u establishes an upstream/tracking relationship, so later you can usually just use: git push
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
